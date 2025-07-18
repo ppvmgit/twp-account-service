@@ -48,7 +48,7 @@ jobs:
         with:
           context: .
           build-contexts: |
-            src= requirements.txt
+            src=./src
           file: ./Dockerfile
           push: true
           tags: ${{ needs.prepare.outputs.tags }}
